@@ -63,6 +63,8 @@ class HomeScreen extends StatelessWidget {
                 scrollDirection: Axis.horizontal,
               ),
             ),
+            SizedBox( height: 22,),
+            Text('data'),
           ],
         ),
       ),
