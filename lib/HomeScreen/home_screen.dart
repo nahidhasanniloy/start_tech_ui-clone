@@ -64,7 +64,7 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
             SizedBox( height: 22,),
-            Text('data'),
+            Text('shohel'),
           ],
         ),
       ),
