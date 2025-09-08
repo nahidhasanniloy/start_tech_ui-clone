@@ -2,6 +2,8 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:startech/utils/colors.dart';
 
+import 'about_pages.dart';
+
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
@@ -64,7 +66,14 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
             SizedBox( height: 22,),
-            Text('234523'),
+            ElevatedButton(
+                onPressed: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) => AboutPages(),));
+
+            }, child: Text('click here') )
+
+
+
           ],
         ),
       ),
