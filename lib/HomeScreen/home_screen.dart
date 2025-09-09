@@ -1,5 +1,6 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
+import 'package:startech/HomeScreen/login_screen.dart';
 import 'package:startech/utils/colors.dart';
 import 'package:startech/widgets/custom_button.dart';
 
@@ -28,8 +29,12 @@ class HomeScreen extends StatelessWidget {
             icon: Icon(Icons.search, color: AppColors.white),
           ),
           IconButton(
-            onPressed: () {},
+            onPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context) => AboutPages(),));},
             icon: Icon(Icons.shopping_cart, color: AppColors.white),
+          ),
+          IconButton(
+            onPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context) => LoginScreen(),));},
+            icon: Icon(Icons.login, color: AppColors.white),
           ),
         ],
       ),
@@ -52,7 +57,7 @@ class HomeScreen extends StatelessWidget {
                 );
               },
               options: CarouselOptions(
-                height: 300,
+                height: 200,
                 aspectRatio: 16 / 9,
                 viewportFraction: 0.8,
                 initialPage: 0,
