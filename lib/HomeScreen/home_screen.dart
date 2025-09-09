@@ -28,7 +28,9 @@ class HomeScreen extends StatelessWidget {
             icon: Icon(Icons.search, color: AppColors.white),
           ),
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) => AboutPages(),));
+            },
             icon: Icon(Icons.shopping_cart, color: AppColors.white),
           ),
         ],
@@ -99,12 +101,9 @@ class HomeScreen extends StatelessWidget {
                 ],
               ),
             ),
+            // Compare product section
+            SizedBox(height: 22),
 
-            // ElevatedButton(
-            //     onPressed: () {
-            //   Navigator.push(context, MaterialPageRoute(builder: (context) => AboutPages(),));
-            //
-            // }, child: Text('click here') )
           ],
         ),
       ),
