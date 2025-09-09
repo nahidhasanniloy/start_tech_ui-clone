@@ -2,7 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:startech/utils/colors.dart';
 
 class CustomButton extends StatelessWidget {
-  const CustomButton({super.key});
+
+  final String title;
+  final bool? isBorderType;
+  const CustomButton({super.key, required this.title, this.isBorderType});
 
   @override
   Widget build(BuildContext context) {
@@ -10,15 +13,15 @@ class CustomButton extends StatelessWidget {
       padding: EdgeInsets.symmetric(horizontal: 15, vertical:  10),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10),
-        color: AppColors.black,
-        border: Border.all(color: AppColors.primaryColor, width: 2),
+        color: isBorderType == true ? null : AppColors.black,
+        border:isBorderType == true ? Border.all(color: AppColors.primaryColor, width: 2) : null,
       ),
 
       child: Center(
         child: Text(
-          'Search Here',
+          title,
           style: TextStyle(
-              color: AppColors.white,
+              color: isBorderType == true ?AppColors.primaryColor : AppColors.white,
               fontWeight: FontWeight.w700,
               fontSize: 16),
         ),

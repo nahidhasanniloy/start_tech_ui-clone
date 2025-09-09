@@ -95,7 +95,10 @@ class HomeScreen extends StatelessWidget {
                     icon: Icons.search,
                   ),
                   SizedBox(height: 15),
-                  CustomButton(),
+                  CustomButton(title: 'View Comparison',
+                  isBorderType: true,
+
+                  ),
 
 
                 ],
