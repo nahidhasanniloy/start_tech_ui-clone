@@ -29,7 +29,13 @@ class HomeScreen extends StatelessWidget {
             icon: Icon(Icons.search, color: AppColors.white),
           ),
           IconButton(
+<<<<<<< HEAD
             onPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context) => AboutPages(),));},
+=======
+            onPressed: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) => AboutPages(),));
+            },
+>>>>>>> adnan
             icon: Icon(Icons.shopping_cart, color: AppColors.white),
           ),
           IconButton(
@@ -107,12 +113,9 @@ class HomeScreen extends StatelessWidget {
                 ],
               ),
             ),
+            // Compare product section
+            SizedBox(height: 22),
 
-            // ElevatedButton(
-            //     onPressed: () {
-            //   Navigator.push(context, MaterialPageRoute(builder: (context) => AboutPages(),));
-            //
-            // }, child: Text('click here') )
           ],
         ),
       ),
