@@ -1,7 +1,9 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:startech/utils/colors.dart';
+import 'package:startech/widgets/custom_button.dart';
 
+import '../widgets/custom_field.dart';
 import 'about_pages.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -11,7 +13,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     List<String> sliders = [
       'assets/images/sliderimage.png',
-          'assets/images/image2.webp'
+      'assets/images/image2.webp',
     ];
 
     return Scaffold(
@@ -65,15 +67,44 @@ class HomeScreen extends StatelessWidget {
                 scrollDirection: Axis.horizontal,
               ),
             ),
-            SizedBox( height: 22,),
-            ElevatedButton(
-                onPressed: () {
-              Navigator.push(context, MaterialPageRoute(builder: (context) => AboutPages(),));
+            SizedBox(height: 22),
+            Container(
+              width: double.infinity,
+              padding: EdgeInsets.symmetric(horizontal: 15, vertical: 15),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10),
+                color: AppColors.secondColor,
+              ),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    "Compare Products",
+                    style: TextStyle(fontWeight: FontWeight.w800, fontSize: 20),
+                  ),
+                  SizedBox(height: 15),
+                  CustomField(
+                    hintText: 'Search and select product',
+                    icon: Icons.search,
+                  ),
+                  SizedBox(height: 15),
+                  CustomField(
+                    hintText: 'Search and select product',
+                    icon: Icons.search,
+                  ),
+                  SizedBox(height: 15),
+                  CustomButton(),
 
-            }, child: Text('click here') )
 
+                ],
+              ),
+            ),
 
-
+            // ElevatedButton(
+            //     onPressed: () {
+            //   Navigator.push(context, MaterialPageRoute(builder: (context) => AboutPages(),));
+            //
+            // }, child: Text('click here') )
           ],
         ),
       ),
