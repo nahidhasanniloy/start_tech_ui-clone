@@ -92,9 +92,78 @@ class LoginScreen extends StatelessWidget {
 
 
 
+              ],
+
+            ),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text("Phone / E-mail",
+                  style: TextStyle(
+                      fontSize: 14,
+                      color: Colors.black,
+                      fontWeight: FontWeight.w700
+                  ),
+
+                ),
+                SizedBox(height: 5,),
+
+                CustomField(hintText: "Phone / E-mail",
+                    icon: Icons.email,
+                  borderRadius: BorderRadius.circular(10),
+                ),
+
+                SizedBox(height: 5,),
+
+                Text("Password",
+                  style: TextStyle(
+                      fontSize: 14,
+                      color: Colors.black,
+                      fontWeight: FontWeight.w700
+                  ),
+
+                ),
+                SizedBox(height: 5,),
+
+                Text("Forgotten Password?",
+                  style: TextStyle(
+                      fontSize: 14,
+                      color: Colors.red,
+                      fontWeight: FontWeight.w600,
+                  ),
+
+                ),
+
+                SizedBox(height: 5,),
+
+                CustomField(
+                    hintText: "Password",
+                    icon: Icons.password,
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                SizedBox(height: 5,),
+
+                CustomButton(title: "Login",color: Color(0xff3749bb),isBorderType: false,),
+
+                Center(
+                  child: Text("Don't have an account?",
+                    style: TextStyle(
+                      fontSize: 16,
+                      color: Colors.black,
+                      fontWeight: FontWeight.w500,
+                    ),
+                  ),
+                ),
+
+                CustomButton(title: "Create Your Account", color: Color(0xff3749bb),isBorderType: false,),
+
 
               ],
-            ),
+            )
+
+
+
+
           ],
         ),
       ),
