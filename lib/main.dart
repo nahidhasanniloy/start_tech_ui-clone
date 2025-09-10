@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'HomeScreen/home_screen.dart';
+import 'create new.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,9 +18,9 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(
 
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepOrange),
       ),
-      home: const HomeScreen(),
+      home: const CreateNew(),
     );
   }
 }

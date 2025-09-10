@@ -145,17 +145,12 @@ class LoginScreen extends StatelessWidget {
 
                 CustomButton(title: "Login",color: Color(0xff3749bb),isBorderType: false,),
 
-                Center(
-                  child: Text("Don't have an account?",
-                    style: TextStyle(
-                      fontSize: 16,
-                      color: Colors.black,
-                      fontWeight: FontWeight.w500,
-                    ),
-                  ),
-                ),
+
 
                 CustomButton(title: "Create Your Account", color: Color(0xff3749bb),isBorderType: false,),
+
+
+
 
 
               ],

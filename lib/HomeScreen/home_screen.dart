@@ -29,13 +29,9 @@ class HomeScreen extends StatelessWidget {
             icon: Icon(Icons.search, color: AppColors.white),
           ),
           IconButton(
-<<<<<<< HEAD
-            onPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context) => AboutPages(),));},
-=======
-            onPressed: () {
-              Navigator.push(context, MaterialPageRoute(builder: (context) => AboutPages(),));
-            },
->>>>>>> adnan
+
+          onPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context) => AboutPages(),));},
+
             icon: Icon(Icons.shopping_cart, color: AppColors.white),
           ),
           IconButton(
