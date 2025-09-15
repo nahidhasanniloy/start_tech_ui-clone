@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:startech/sentEmail.dart';
 
 import 'HomeScreen/home_screen.dart';
 import 'create new.dart';
+import 'forgottenPassword.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,7 +22,11 @@ class MyApp extends StatelessWidget {
 
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepOrange),
       ),
-      home: const CreateNew(),
+      home: Sentemail (),
     );
   }
 }
+
+
+
+
